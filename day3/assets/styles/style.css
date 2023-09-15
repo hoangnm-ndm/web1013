@@ -1,0 +1,34 @@
+/* CSS - Cascading style sheet */
+body {
+  background-color: yellow;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.banner > img {
+  width: 100%;
+}
+.header-nav > ul > li {
+  list-style: none;
+}
+.nav-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+  text-decoration: none;
+  border: 2px solid red;
+}
+
+/* 
+CSS Selector - Bộ chọn tạo kiểu
+1. tag name: body, div, p, span, li, a....
+2. id - identifier: duy nhất chỉ xuất hiện 1 lần.
+3. class - lớp: đặt chung các thuộc tính cho nhiều phần tử
+*/
