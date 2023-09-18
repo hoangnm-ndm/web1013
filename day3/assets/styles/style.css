@@ -1,4 +1,14 @@
 /* CSS - Cascading style sheet */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 body {
   background-color: yellow;
 }
@@ -19,11 +29,22 @@ body {
   list-style: none;
 }
 .nav-item {
+  display: inline-block;
   font-size: 20px;
   font-weight: 700;
   color: red;
   text-decoration: none;
-  border: 2px solid red;
+  margin: 24px;
+  border-top: 1px solid red;
+  border-bottom: 5px dashed blue;
+  border-left: 10px dotted orchid;
+  border-right: 10px solid yellowgreen;
+  border-style: dashed;
+  border-color: black;
+  border-width: 10px;
+  padding: 30px;
+  /* padding-left: 20px;
+  padding-right: 10px; */
 }
 
 /* 
@@ -32,3 +53,19 @@ CSS Selector - Bộ chọn tạo kiểu
 2. id - identifier: duy nhất chỉ xuất hiện 1 lần.
 3. class - lớp: đặt chung các thuộc tính cho nhiều phần tử
 */
+
+.box-new {
+  box-sizing: content-box;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border: 5px solid violet;
+}
+
+.box-new-2 {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border: 5px solid violet;
+}
