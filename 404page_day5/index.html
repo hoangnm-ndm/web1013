@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 Page</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <div class="wrap d-flex">
-        <div class="logo">SpaceLink</div>
+        <div class="logo">
+          <a href="/">SpaceLink</a>
+        </div>
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -34,7 +40,9 @@
           <h1>404</h1>
           <h2>page not found</h2>
           <p>Sorry, we couldn’t find the page you ‘re looking for</p>
-          <a href="/home">Back to home </a>
+          <a class="btn__back-home" href="/home"
+            >Back to home <i class="icon-arrow bx bx-chevron-right"></i>
+          </a>
         </div>
       </div>
     </main>

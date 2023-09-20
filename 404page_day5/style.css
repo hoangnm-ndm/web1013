@@ -4,14 +4,13 @@
   padding: 0;
   margin: 0;
 }
-
-a.nav-item__link {
+a {
   text-decoration: none;
-  color: white;
   transition: color 0.3s ease-in-out;
+  color: white;
 }
 
-a.nav-item__link:hover {
+a:hover {
   color: blue;
 }
 
@@ -19,6 +18,14 @@ ol,
 ul,
 li {
   list-style: none;
+}
+
+.logo > a {
+  background: -webkit-linear-gradient(#f05959, #04968e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  letter-spacing: 4px;
 }
 
 html {
@@ -31,9 +38,11 @@ html {
 body {
   background-color: black;
   background-image: url(./imgs/1111.png);
-  background-size: cover;
-  background-position: right;
-  background-repeat: none;
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }
 
 .wrap {
@@ -52,6 +61,10 @@ header {
   flex-wrap: wrap;
 }
 
+.logo {
+  font-size: 32px;
+}
+
 .nav-list {
   display: flex;
 }
@@ -62,19 +75,38 @@ header {
   text-transform: capitalize;
 }
 .content {
-  padding: 100px;
+  padding: 100px auto;
 }
 
 .content > h1 {
   font-size: 200px;
   text-transform: capitalize;
+  margin-bottom: 40px;
 }
 
 .content > h2 {
   font-size: 60px;
   text-transform: capitalize;
+  margin-bottom: 40px;
 }
 
 .content > p {
   font-size: 32px;
+  margin-bottom: 150px;
+}
+
+.btn__back-home {
+  font-size: 32px;
+  color: #581dff;
+  display: flex;
+  align-items: center;
+}
+
+.btn__back-home:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.icon-arrow {
+  font-size: 40px;
 }
