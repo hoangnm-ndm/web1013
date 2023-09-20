@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a.nav-item__link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+a.nav-item__link:hover {
+  color: blue;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+  background-image: url(./imgs/1111.png);
+  background-size: cover;
+  background-position: right;
+  background-repeat: none;
+}
+
+.wrap {
+  margin: 0 70px;
+}
+
+header {
+  margin: 24px auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item__link {
+  font-size: 24px;
+  padding: 12px;
+  text-transform: capitalize;
+}
+.content {
+  padding: 100px;
+}
+
+.content > h1 {
+  font-size: 200px;
+  text-transform: capitalize;
+}
+
+.content > h2 {
+  font-size: 60px;
+  text-transform: capitalize;
+}
+
+.content > p {
+  font-size: 32px;
+}

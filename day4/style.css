@@ -31,15 +31,24 @@ a {
   width: 100px;
   background-color: blueviolet;
   float: left;
+  height: 100%;
 }
 
 .header-nav {
   width: calc(100% - 100px);
   background-color: yellow;
+  height: 100%;
+  float: left;
+}
+
+.header-nav > ul {
+  width: 100%;
+  height: 100%;
 }
 
 .header-nav > ul > li {
-  float: right;
+  height: 100%;
+  float: left;
 }
 
 .nav-item {
@@ -48,4 +57,5 @@ a {
   border: 1px solid blue;
   margin-left: 24px;
   padding: 12px;
+  height: 100%;
 }
