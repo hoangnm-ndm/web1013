@@ -1,13 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --color-background: #e8e1da;
+  --color-text: #1f1d2a;
+}
+
+html {
+  background-color: #e8e1da;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text);
+}
+
 a {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
   color: white;
+  cursor: pointer;
 }
 
 a:hover {
@@ -21,28 +35,210 @@ li {
 }
 
 body {
-  background-color: #9b948e;
+  padding-bottom: 100px;
 }
 
-.banner {
+.wrap {
+  margin: 0 auto;
+  padding: 0 120px;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+img {
   width: 100%;
+}
+/* Header: BEGIN */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.header_logo {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.header_menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header_menu .menu-item-a {
+  padding: 12px;
+  color: var(--color-text);
+}
+
+.header_menu .menu-item-a:hover {
+  border-bottom: 2px solid green;
+}
+
+.header_sign {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid var(--color-text);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header_sign:hover {
+  color: #fff;
+  background-color: blue;
+}
+
+/* Header: END */
+
+/* Banner: BEGIN */
+.banner {
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner_content,
+.banner_avatar {
+  width: 50%;
+}
+
+.banner_content {
+  padding: 60px 0;
+}
+.banner_title {
+  font-size: 55px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+
+.banner_desc {
+  color: #9b948e;
+  margin-bottom: 50px;
+}
+
+.btn-cta {
+  padding: 20px 32px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background-color: #96c67f;
+}
+
+.banner_avatar {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content,
-.avatar {
-  width: 50%;
-}
-
-.avatar-img {
+.banner_portrait {
+  width: 500px;
+  margin: 0 auto;
+  background-image: url(./imgs/portrait-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   border-radius: 50%;
-  width: 80%;
-  max-width: 100%;
 }
 
-img {
+/* Banner: END */
+
+/* Companies: BEGIN */
+
+.companies {
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.companies_title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.brands-list {
   width: 100%;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
+.brand-item {
+  margin: 0 30px;
+  height: 30px;
+  width: auto;
+}
+
+.brand-item > img {
+  height: 100%;
+  width: auto;
+}
+
+/* Trusted by Global Companies */
+/* Companies: END */
+
+/* TEACHERS: BEGIN */
+.teachers {
+  margin: 0 auto;
+  padding: 50px 0;
+  color: var(--color-text);
+}
+
+.teachers > h6 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.teachers > h5 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.teachers-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teacher-item {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  min-height: 400px;
+}
+
+.teacher_img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.teacher_img > img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.teacher-desc {
+  padding: 20px;
+}
+
+.teacher-name {
+  font-size: 20px;
+  font-weight: 500px;
+  color: var(--color-text);
+  margin-bottom: 6px;
+}
+.subject {
+  color: #9b948e;
+  font-size: 16px;
+}
+
+/* TEACHERS: END */
