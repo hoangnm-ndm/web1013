@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.wrap {
+  padding: 0 256px;
+}
+
+.box {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box__item {
+  width: calc((100% - 96px) / 4);
+  background-color: red;
+}

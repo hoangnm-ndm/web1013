@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 14p;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #eee;
+}
+
+h1 {
+  text-align: center;
+  margin: 100px auto 24px;
+}
+
+form {
+  padding: 24px;
+  width: 320px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.wrap {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-control {
+  margin-bottom: 24px;
+}
+
+label {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+button {
+  width: 100%;
+  padding: 8px 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background-color: blue;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid blue;
+}
+button:hover {
+  color: blue;
+  background-color: #fff;
+}
+
+.register_link {
+  text-align: center;
+}
